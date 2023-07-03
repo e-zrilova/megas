@@ -1,0 +1,1062 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Мегаспорт</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/normalize.css" />
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" defer></script>
+    <link rel="stylesheet" href="./src/style.css" />
+    <script src="./src/main.js" defer></script>
+</head>
+<body>
+<header class="header">
+    <img class="header__logo" src="./images/logo.png" alt="">
+    <nav class="header__navigator navigator">
+        <ul class="navigator__list">
+            <li class="navigator__list-item">
+                <a href="#" class="navigator__link">
+                    О нас
+                </a>
+            </li>
+            <li class="navigator__list-item">
+                <a href="#" class="navigator__link">
+                    Услуги
+                </a>
+            </li>
+            <li class="navigator__list-item">
+                <a href="#" class="navigator__link">
+                    Клубные карты
+                </a>
+            </li>
+            <li class="navigator__list-item">
+                <a href="#" class="navigator__link">
+                    Команда
+                </a>
+            </li>
+            <li class="navigator__list-item">
+                <a href="#" class="navigator__link">
+                    FAQ
+                </a>
+            </li>
+            <li class="navigator__list-item">
+                <a href="#" class="navigator__link">
+                    Контакты
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <button type="button" class="header__button button button--padding-h-m button--white button--padding-v-l">
+        Расписание тренировок
+    </button>
+    <button type="button" class="header__button button button--padding-h-m button--yellow button--padding-v-m">
+        Авторизация
+    </button>
+    <div class="header__burger burger js-burger">
+        <span class="burger__item burger__item--up"></span>
+        <span class="burger__item burger__item--down"></span>
+    </div>
+</header>
+<div class="menu js-menu">
+    <div class="menu__container">
+        <nav class="menu__navigator navigator">
+            <ul class="navigator__list">
+                <li class="navigator__list-item">
+                    <a href="#" class="navigator__link">
+                        О нас
+                    </a>
+                </li>
+                <li class="navigator__list-item">
+                    <a href="#" class="navigator__link">
+                        Услуги
+                    </a>
+                </li>
+                <li class="navigator__list-item">
+                    <a href="#" class="navigator__link">
+                        Клубные карты
+                    </a>
+                </li>
+                <li class="navigator__list-item">
+                    <a href="#" class="navigator__link">
+                        Команда
+                    </a>
+                </li>
+                <li class="navigator__list-item">
+                    <a href="#" class="navigator__link">
+                        FAQ
+                    </a>
+                </li>
+                <li class="navigator__list-item">
+                    <a href="#" class="navigator__link">
+                        Контакты
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div>
+            <button type="button" class="button button--white button--padding-h-m button--block">
+                Расписание тренировок
+            </button>
+            <button type="button" class="button button--yellow button--padding-h-m button--block">
+                Авторизация
+            </button>
+        </div>
+    </div>
+</div>
+<main>
+    <section class="first-section full-screen">
+        <div class="swiper first-section__slider js-first-section-slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper swiper-no-swiping">
+                <div class="swiper-slide">
+                    <img class="first-section__slide-image" src="./images/first-section.png" alt="slide 1">
+                </div>
+                <div class="swiper-slide">
+                    <img class="first-section__slide-image" src="./images/first-section-2.jpg" alt="slide 1">
+                </div>
+            </div>
+        </div>
+        <div class="first-section__text-container">
+            <div class="first-section__slider-text">
+                <div class="first-section__text js-active">
+                    <div class="first-section__text-item">
+                        Уникальное пространство для спорта, <span>красоты и здоровья.</span>
+                    </div>
+                    <a href="#" class="first-section__more">Подробнее</a>
+                </div>
+                <div class="first-section__text">
+                    <div class="first-section__text-item">
+                        2Уникальное пространство для спорта, <span>красоты и здоровья.</span>
+                    </div>
+                    <a href="#" class="first-section__more">Подробнее</a>
+                </div>
+            </div>
+            <div class="first-section__button-container slider-buttons">
+                <div class="swiper-button-prev arrow-button arrow-button--left js-first-section-slider-left"></div>
+                <div class="swiper-button-next arrow-button arrow-button--right js-first-section-slider-right"></div>
+            </div>
+        </div>
+
+        <div class="first-section__video-container">
+            <video class="first-section__video js-firs-screen-video" src="./video/gym.mp4" autoplay loop
+                   muted></video>
+            <div class="first-section__close-video js-first-screen-close-video"></div>
+        </div>
+    </section>
+    <section class="about-us">
+        <div class="about-us__sidebar">
+            <div class="about-us__sidebar-container">
+                <div class="about-us__title">
+                    О нас
+                </div>
+                <div class="about-us__main-text">
+                    Просторный и динамичный комплекс, <span>но при этом уютный и комфортный для всей семьи</span>
+                </div>
+                <div class="about-us__text">
+                    У нас вы можете посетить:спортивный и детский бассейн с теплой водой комфортной температуры,
+                    4 вида бань с зоной джакузи и уютной комнатой отдыха, тренажерный зал и залы групповых программ,
+                    большой детский клуб, уютное кафе, соляную комнату. Для посетителей комплекса будут доступны
+                    групповые программы, персональный тренинг для детей и взрослых, занятия в спортивных секциях и
+                    творческих студиях. МегаСпорт – другой уровень Вашего досуга!!!
+                </div>
+            </div>
+            <button type="button" class="button button--orange button--padding-h-l button--block">
+                фотогалерея
+            </button>
+        </div>
+        <div class="about-us__services">
+            <div class="about-us__service service js-service">
+                <div class="service__content">
+                    <div class="service__arrow arrow-button arrow-button--right"></div>
+                    <div class="service__title">
+                        Функциональный тренинг
+                    </div>
+                    <div class="service__description">
+                        Игровой зал с огромным разнообразием спортивного и сенсорного оборудования
+                    </div>
+                </div>
+            </div>
+            <div class="about-us__service service js-service">
+                <div class="service__content">
+                    <div class="service__arrow arrow-button arrow-button--right"></div>
+                    <div class="service__title">
+                        Функциональный тренинг
+                    </div>
+                    <div class="service__description">
+                        Игровой зал с огромным разнообразием спортивного и сенсорного оборудования
+                    </div>
+                </div>
+            </div>
+            <div class="about-us__service service js-service">
+                <div class="service__content">
+                    <div class="service__arrow arrow-button arrow-button--right"></div>
+                    <div class="service__title">
+                        Функциональный тренинг
+                    </div>
+                    <div class="service__description">
+                        Игровой зал с огромным разнообразием спортивного и сенсорного оборудования
+                    </div>
+                </div>
+            </div>
+            <div class="about-us__service service js-service">
+                <div class="service__content">
+                    <div class="service__arrow arrow-button arrow-button--right"></div>
+                    <div class="service__title">
+                        Функциональный тренинг
+                    </div>
+                    <div class="service__description">
+                        Игровой зал с огромным разнообразием спортивного и сенсорного оборудования
+                    </div>
+                </div>
+            </div>
+            <div class="about-us__service service js-service">
+                <div class="service__content">
+                    <div class="service__arrow arrow-button arrow-button--right"></div>
+                    <div class="service__title">
+                        Функциональный тренинг
+                    </div>
+                    <div class="service__description">
+                        Игровой зал с огромным разнообразием спортивного и сенсорного оборудования
+                    </div>
+                </div>
+            </div>
+            <div class="about-us__service service js-service">
+                <div class="service__content">
+                    <div class="service__arrow arrow-button arrow-button--right"></div>
+                    <div class="service__title">
+                        Функциональный тренинг
+                    </div>
+                    <div class="service__description">
+                        Игровой зал с огромным разнообразием спортивного и сенсорного оборудования
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about-us__sidebar">
+            <div class="about-us__sidebar-image-container">
+                <img class="about-us__sidebar-image js-service-img js-active" src="./images/service.png" alt="">
+                <img class="about-us__sidebar-image js-service-img" src="./images/service.png" alt="">
+                <img class="about-us__sidebar-image js-service-img" src="./images/service.png" alt="">
+                <img class="about-us__sidebar-image js-service-img" src="./images/service.png" alt="">
+                <img class="about-us__sidebar-image js-service-img" src="./images/service.png" alt="">
+                <img class="about-us__sidebar-image js-service-img" src="./images/service.png" alt="">
+            </div>
+            <button type="button" class="button button--padding-h-l button--orange button--block">
+                Купить абонемент
+            </button>
+        </div>
+    </section>
+    <div class="service-drawer">
+        <div class="service-drawer__backdrop"></div>
+        <div class="service-drawer__container">
+            <div class="close-button service-drawer__close js-service-close">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.66751 10.0161L4.8642 6.21282C4.57131 5.91992 4.57131 5.44505 4.8642 5.15216C5.15709 4.85926 5.63197 4.85926 5.92486 5.15216L10.7888 10.0161L5.92486 14.8801C5.63197 15.173 5.15709 15.173 4.8642 14.8801C4.57131 14.5872 4.57131 14.1123 4.8642 13.8194L8.66751 10.0161Z" fill="black"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.8852 9.99999L14.6885 13.8033C14.9814 14.0962 14.9814 14.5711 14.6885 14.864C14.3956 15.1569 13.9208 15.1569 13.6279 14.864L8.7639 9.99999L13.6279 5.13602C13.9208 4.84313 14.3956 4.84313 14.6885 5.13602C14.9814 5.42891 14.9814 5.90379 14.6885 6.19668L10.8852 9.99999Z" fill="black"/>
+                </svg>
+
+            </div>
+            <div class="swiper service-drawer__slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="service-drawer__img" src="./images/pool.jpg" alt="pool">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="service-drawer__img" src="./images/pool.jpg" alt="pool">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="service-drawer__img" src="./images/pool.jpg" alt="pool">
+                    </div>
+                </div>
+                <div class="swiper-pagination js-service-drawer-pagination"></div>
+
+                <div class="swiper-button-prev arrow-button arrow-button--left js-service-drawer-prev"></div>
+                <div class="swiper-button-next arrow-button arrow-button--right js-service-drawer-next"></div>
+            </div>
+            <div class="service-drawer__content">
+                <div class="service-drawer__title">Бассейн</div>
+                <div class="service-drawer__description">
+                    Плавание показано всем здоровым людям. У него не так уж много ограничений. Часто врачи рекомендуют походы в бассейн всем, у кого не ладится с прочими видами спорта. Необязательно совершать мощные рывки, плавать можно размеренно и неторопливо: получать удовольствие, укреплять мышцы и выносливость. Плавание показано всем здоровым людям. У него не так уж много ограничений. Часто врачи рекомендуют походы в бассейн всем, у кого не ладится с прочими видами спорта. Необязательно совершать мощные рывки, плавать можно размеренно и неторопливо: получать удовольствие, укреплять мышцы и выносливость.Плавание показано всем здоровым людям. У него не так уж много ограничений. Часто врачи рекомендуют походы в бассейн всем, у кого не ладится с прочими видами спорта. Необязательно совершать мощные рывки, плавать можно размеренно и неторопливо: получать удовольствие, укреплять мышцы и выносливость.
+                </div>
+            </div>
+            <button type="button" class="button button--padding-h-l button--orange button--block">
+                Купить абонемент
+            </button>
+        </div>
+    </div>
+    <div class="service-drawer">
+        <div class="service-drawer__backdrop"></div>
+        <div class="service-drawer__container">
+            <div class="close-button service-drawer__close js-service-close">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.66751 10.0161L4.8642 6.21282C4.57131 5.91992 4.57131 5.44505 4.8642 5.15216C5.15709 4.85926 5.63197 4.85926 5.92486 5.15216L10.7888 10.0161L5.92486 14.8801C5.63197 15.173 5.15709 15.173 4.8642 14.8801C4.57131 14.5872 4.57131 14.1123 4.8642 13.8194L8.66751 10.0161Z" fill="black"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.8852 9.99999L14.6885 13.8033C14.9814 14.0962 14.9814 14.5711 14.6885 14.864C14.3956 15.1569 13.9208 15.1569 13.6279 14.864L8.7639 9.99999L13.6279 5.13602C13.9208 4.84313 14.3956 4.84313 14.6885 5.13602C14.9814 5.42891 14.9814 5.90379 14.6885 6.19668L10.8852 9.99999Z" fill="black"/>
+                </svg>
+
+            </div>
+            <div class="swiper service-drawer__slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="service-drawer__img" src="./images/pool.jpg" alt="pool">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="service-drawer__img" src="./images/pool.jpg" alt="pool">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="service-drawer__img" src="./images/pool.jpg" alt="pool">
+                    </div>
+                </div>
+                <div class="swiper-pagination js-service-drawer-pagination"></div>
+
+                <div class="swiper-button-prev arrow-button arrow-button--left js-service-drawer-prev"></div>
+                <div class="swiper-button-next arrow-button arrow-button--right js-service-drawer-next"></div>
+            </div>
+            <div class="service-drawer__content">
+                <div class="service-drawer__title">Бассейн</div>
+                <div class="service-drawer__description">
+                    Плавание показано всем здоровым людям. У него не так уж много ограничений. Часто врачи рекомендуют походы в бассейн всем, у кого не ладится с прочими видами спорта. Необязательно совершать мощные рывки, плавать можно размеренно и неторопливо: получать удовольствие, укреплять мышцы и выносливость. Плавание показано всем здоровым людям. У него не так уж много ограничений. Часто врачи рекомендуют походы в бассейн всем, у кого не ладится с прочими видами спорта. Необязательно совершать мощные рывки, плавать можно размеренно и неторопливо: получать удовольствие, укреплять мышцы и выносливость.Плавание показано всем здоровым людям. У него не так уж много ограничений. Часто врачи рекомендуют походы в бассейн всем, у кого не ладится с прочими видами спорта. Необязательно совершать мощные рывки, плавать можно размеренно и неторопливо: получать удовольствие, укреплять мышцы и выносливость.
+                </div>
+            </div>
+            <button type="button" class="button button--padding-h-l button--orange button--block">
+                Купить абонемент
+            </button>
+        </div>
+    </div>
+    <div class="service-drawer">
+        <div class="service-drawer__backdrop"></div>
+        <div class="service-drawer__container">
+            <div class="close-button service-drawer__close js-service-close">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.66751 10.0161L4.8642 6.21282C4.57131 5.91992 4.57131 5.44505 4.8642 5.15216C5.15709 4.85926 5.63197 4.85926 5.92486 5.15216L10.7888 10.0161L5.92486 14.8801C5.63197 15.173 5.15709 15.173 4.8642 14.8801C4.57131 14.5872 4.57131 14.1123 4.8642 13.8194L8.66751 10.0161Z" fill="black"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.8852 9.99999L14.6885 13.8033C14.9814 14.0962 14.9814 14.5711 14.6885 14.864C14.3956 15.1569 13.9208 15.1569 13.6279 14.864L8.7639 9.99999L13.6279 5.13602C13.9208 4.84313 14.3956 4.84313 14.6885 5.13602C14.9814 5.42891 14.9814 5.90379 14.6885 6.19668L10.8852 9.99999Z" fill="black"/>
+                </svg>
+
+            </div>
+            <div class="swiper service-drawer__slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="service-drawer__img" src="./images/pool.jpg" alt="pool">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="service-drawer__img" src="./images/pool.jpg" alt="pool">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="service-drawer__img" src="./images/pool.jpg" alt="pool">
+                    </div>
+                </div>
+                <div class="swiper-pagination js-service-drawer-pagination"></div>
+
+                <div class="swiper-button-prev arrow-button arrow-button--left js-service-drawer-prev"></div>
+                <div class="swiper-button-next arrow-button arrow-button--right js-service-drawer-next"></div>
+            </div>
+            <div class="service-drawer__content">
+                <div class="service-drawer__title">Бассейн</div>
+                <div class="service-drawer__description">
+                    Плавание показано всем здоровым людям. У него не так уж много ограничений. Часто врачи рекомендуют походы в бассейн всем, у кого не ладится с прочими видами спорта. Необязательно совершать мощные рывки, плавать можно размеренно и неторопливо: получать удовольствие, укреплять мышцы и выносливость. Плавание показано всем здоровым людям. У него не так уж много ограничений. Часто врачи рекомендуют походы в бассейн всем, у кого не ладится с прочими видами спорта. Необязательно совершать мощные рывки, плавать можно размеренно и неторопливо: получать удовольствие, укреплять мышцы и выносливость.Плавание показано всем здоровым людям. У него не так уж много ограничений. Часто врачи рекомендуют походы в бассейн всем, у кого не ладится с прочими видами спорта. Необязательно совершать мощные рывки, плавать можно размеренно и неторопливо: получать удовольствие, укреплять мышцы и выносливость.
+                </div>
+            </div>
+            <button type="button" class="button button--padding-h-l button--orange button--block">
+                Купить абонемент
+            </button>
+        </div>
+    </div>
+    <div class="service-drawer">
+        <div class="service-drawer__backdrop"></div>
+        <div class="service-drawer__container">
+            <div class="close-button service-drawer__close js-service-close">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.66751 10.0161L4.8642 6.21282C4.57131 5.91992 4.57131 5.44505 4.8642 5.15216C5.15709 4.85926 5.63197 4.85926 5.92486 5.15216L10.7888 10.0161L5.92486 14.8801C5.63197 15.173 5.15709 15.173 4.8642 14.8801C4.57131 14.5872 4.57131 14.1123 4.8642 13.8194L8.66751 10.0161Z" fill="black"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.8852 9.99999L14.6885 13.8033C14.9814 14.0962 14.9814 14.5711 14.6885 14.864C14.3956 15.1569 13.9208 15.1569 13.6279 14.864L8.7639 9.99999L13.6279 5.13602C13.9208 4.84313 14.3956 4.84313 14.6885 5.13602C14.9814 5.42891 14.9814 5.90379 14.6885 6.19668L10.8852 9.99999Z" fill="black"/>
+                </svg>
+
+            </div>
+            <div class="swiper service-drawer__slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="service-drawer__img" src="./images/pool.jpg" alt="pool">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="service-drawer__img" src="./images/pool.jpg" alt="pool">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="service-drawer__img" src="./images/pool.jpg" alt="pool">
+                    </div>
+                </div>
+                <div class="swiper-pagination js-service-drawer-pagination"></div>
+
+                <div class="swiper-button-prev arrow-button arrow-button--left js-service-drawer-prev"></div>
+                <div class="swiper-button-next arrow-button arrow-button--right js-service-drawer-next"></div>
+            </div>
+            <div class="service-drawer__content">
+                <div class="service-drawer__title">Бассейн</div>
+                <div class="service-drawer__description">
+                    Плавание показано всем здоровым людям. У него не так уж много ограничений. Часто врачи рекомендуют походы в бассейн всем, у кого не ладится с прочими видами спорта. Необязательно совершать мощные рывки, плавать можно размеренно и неторопливо: получать удовольствие, укреплять мышцы и выносливость. Плавание показано всем здоровым людям. У него не так уж много ограничений. Часто врачи рекомендуют походы в бассейн всем, у кого не ладится с прочими видами спорта. Необязательно совершать мощные рывки, плавать можно размеренно и неторопливо: получать удовольствие, укреплять мышцы и выносливость.Плавание показано всем здоровым людям. У него не так уж много ограничений. Часто врачи рекомендуют походы в бассейн всем, у кого не ладится с прочими видами спорта. Необязательно совершать мощные рывки, плавать можно размеренно и неторопливо: получать удовольствие, укреплять мышцы и выносливость.
+                </div>
+            </div>
+            <button type="button" class="button button--padding-h-l button--orange button--block">
+                Купить абонемент
+            </button>
+        </div>
+    </div>
+    <div class="service-drawer">
+        <div class="service-drawer__backdrop"></div>
+        <div class="service-drawer__container">
+            <div class="close-button service-drawer__close js-service-close">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.66751 10.0161L4.8642 6.21282C4.57131 5.91992 4.57131 5.44505 4.8642 5.15216C5.15709 4.85926 5.63197 4.85926 5.92486 5.15216L10.7888 10.0161L5.92486 14.8801C5.63197 15.173 5.15709 15.173 4.8642 14.8801C4.57131 14.5872 4.57131 14.1123 4.8642 13.8194L8.66751 10.0161Z" fill="black"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.8852 9.99999L14.6885 13.8033C14.9814 14.0962 14.9814 14.5711 14.6885 14.864C14.3956 15.1569 13.9208 15.1569 13.6279 14.864L8.7639 9.99999L13.6279 5.13602C13.9208 4.84313 14.3956 4.84313 14.6885 5.13602C14.9814 5.42891 14.9814 5.90379 14.6885 6.19668L10.8852 9.99999Z" fill="black"/>
+                </svg>
+
+            </div>
+            <div class="swiper service-drawer__slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="service-drawer__img" src="./images/pool.jpg" alt="pool">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="service-drawer__img" src="./images/pool.jpg" alt="pool">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="service-drawer__img" src="./images/pool.jpg" alt="pool">
+                    </div>
+                </div>
+                <div class="swiper-pagination js-service-drawer-pagination"></div>
+
+                <div class="swiper-button-prev arrow-button arrow-button--left js-service-drawer-prev"></div>
+                <div class="swiper-button-next arrow-button arrow-button--right js-service-drawer-next"></div>
+            </div>
+            <div class="service-drawer__content">
+                <div class="service-drawer__title">Бассейн</div>
+                <div class="service-drawer__description">
+                    Плавание показано всем здоровым людям. У него не так уж много ограничений. Часто врачи рекомендуют походы в бассейн всем, у кого не ладится с прочими видами спорта. Необязательно совершать мощные рывки, плавать можно размеренно и неторопливо: получать удовольствие, укреплять мышцы и выносливость. Плавание показано всем здоровым людям. У него не так уж много ограничений. Часто врачи рекомендуют походы в бассейн всем, у кого не ладится с прочими видами спорта. Необязательно совершать мощные рывки, плавать можно размеренно и неторопливо: получать удовольствие, укреплять мышцы и выносливость.Плавание показано всем здоровым людям. У него не так уж много ограничений. Часто врачи рекомендуют походы в бассейн всем, у кого не ладится с прочими видами спорта. Необязательно совершать мощные рывки, плавать можно размеренно и неторопливо: получать удовольствие, укреплять мышцы и выносливость.
+                </div>
+            </div>
+            <button type="button" class="button button--padding-h-l button--orange button--block">
+                Купить абонемент
+            </button>
+        </div>
+    </div>
+    <div class="service-drawer">
+        <div class="service-drawer__backdrop"></div>
+        <div class="service-drawer__container">
+            <div class="close-button service-drawer__close js-service-close">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.66751 10.0161L4.8642 6.21282C4.57131 5.91992 4.57131 5.44505 4.8642 5.15216C5.15709 4.85926 5.63197 4.85926 5.92486 5.15216L10.7888 10.0161L5.92486 14.8801C5.63197 15.173 5.15709 15.173 4.8642 14.8801C4.57131 14.5872 4.57131 14.1123 4.8642 13.8194L8.66751 10.0161Z" fill="black"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.8852 9.99999L14.6885 13.8033C14.9814 14.0962 14.9814 14.5711 14.6885 14.864C14.3956 15.1569 13.9208 15.1569 13.6279 14.864L8.7639 9.99999L13.6279 5.13602C13.9208 4.84313 14.3956 4.84313 14.6885 5.13602C14.9814 5.42891 14.9814 5.90379 14.6885 6.19668L10.8852 9.99999Z" fill="black"/>
+                </svg>
+
+            </div>
+            <div class="swiper service-drawer__slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="service-drawer__img" src="./images/pool.jpg" alt="pool">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="service-drawer__img" src="./images/pool.jpg" alt="pool">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="service-drawer__img" src="./images/pool.jpg" alt="pool">
+                    </div>
+                </div>
+                <div class="swiper-pagination js-service-drawer-pagination"></div>
+
+                <div class="swiper-button-prev arrow-button arrow-button--left js-service-drawer-prev"></div>
+                <div class="swiper-button-next arrow-button arrow-button--right js-service-drawer-next"></div>
+            </div>
+            <div class="service-drawer__content">
+                <div class="service-drawer__title">Бассейн</div>
+                <div class="service-drawer__description">
+                    Плавание показано всем здоровым людям. У него не так уж много ограничений. Часто врачи рекомендуют походы в бассейн всем, у кого не ладится с прочими видами спорта. Необязательно совершать мощные рывки, плавать можно размеренно и неторопливо: получать удовольствие, укреплять мышцы и выносливость. Плавание показано всем здоровым людям. У него не так уж много ограничений. Часто врачи рекомендуют походы в бассейн всем, у кого не ладится с прочими видами спорта. Необязательно совершать мощные рывки, плавать можно размеренно и неторопливо: получать удовольствие, укреплять мышцы и выносливость.Плавание показано всем здоровым людям. У него не так уж много ограничений. Часто врачи рекомендуют походы в бассейн всем, у кого не ладится с прочими видами спорта. Необязательно совершать мощные рывки, плавать можно размеренно и неторопливо: получать удовольствие, укреплять мышцы и выносливость.
+                </div>
+            </div>
+            <button type="button" class="button button--padding-h-l button--orange button--block">
+                Купить абонемент
+            </button>
+        </div>
+    </div>
+    <section class="video full-screen">
+        <video class="video__player js-video-player" src="./video/gym.mp4"></video>
+        <svg class="video__play-button js-video-btn" viewBox="0 0 131 131" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+            <circle cx="65.5" cy="65.5" r="65.5" fill="white"/>
+            <path d="M73.3267 63.8096C74.5682 64.5946 74.5682 66.4054 73.3267 67.1904L63.3189 73.5187C61.9872 74.3608 60.25 73.4039 60.25 71.8283L60.25 59.1717C60.25 57.5961 61.9872 56.6392 63.3189 57.4813L73.3267 63.8096Z" fill="#EB7B4B"/>
+        </svg>
+
+        <button type="button" class="video__button button button--padding-h-l button--orange button--block">Купить абонемент</button>
+    </section>
+    <section class="promo full-screen">
+        <div class="swiper promo__slider js-promo-slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper promo__slider-wrapper">
+                <div class="swiper-slide">
+                    <img src="./images/promo.jpg" alt="" class="promo__image">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/promo-2.jpg" alt="" class="promo__image">
+                </div>
+            </div>
+        </div>
+        <div class="promo__text-container">
+            <div class="promo__text">
+                <div class="promo__text-item js-active js-promo-text-item">
+                    <div class="promo__title">
+                        Акция долголетие
+                    </div>
+                    <div class="promo__text-content">
+                        Просторный и динамичный комплекс, <span>но при этом уютный и комфортный для всей семьи</span>
+                    </div>
+                </div>
+                <div class="promo__text-item js-promo-text-item">
+                    <div class="promo__title">
+                        2Акция долголетие
+                    </div>
+                    <div class="promo__text-content">
+                        Просторный и динамичный комплекс, <span>но при этом уютный и комфортный для всей семьи</span>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-buttons promo__slider-buttons">
+                <div class="swiper-button-prev arrow-button arrow-button--left js-promo-slider-left"></div>
+                <div class="swiper-button-next arrow-button arrow-button--right js-promo-slider-right"></div>
+            </div>
+        </div>
+    </section>
+    <section class="cards">
+        <div class="cards__header-block">
+            <div class="cards__title">
+                Клубные карты
+            </div>
+            <div class="cards__slider-buttons slider-buttons">
+                <div
+                    class="cards__slider-button swiper-button-prev arrow-button arrow-button--left js-cards-slider-left"></div>
+                <div
+                    class="cards__slider-button swiper-button-next arrow-button arrow-button--right js-cards-slider-right"></div>
+            </div>
+        </div>
+        <div class="swiper cards__slider js-cards-slider">
+            <div class="swiper-wrapper cards__slider-wrapper">
+                <div class="swiper-slide cards__item">
+                    <div class="cards__item-container">
+                        <div class="cards__item-title">
+                            семейные карты
+                        </div>
+                        <div class="cards__item-description">
+                            Для клиентов от 18 лет и старше 12 месяцев безлимитного фитнеса 21 день заморозки
+                        </div>
+                        <div class="cards__item-list-title">В подарок:</div>
+                        <ul class="cards__item-list">
+                            <li class="cards__item-bonus">Персональная тренировка в тренажерном зале</li>
+                            <li class="cards__item-bonus">Персональная тренировка в тренажерном зале</li>
+                            <li class="cards__item-bonus">Персональная тренировка в тренажерном зале</li>
+                        </ul>
+                        <div class="cards__item-instalment">
+                            Действует рассрочка:
+                            1 месяц - 10 000 р., 2 месяц и последующие - 2 000 р. (при рассрочке скидка не учитывается)
+                        </div>
+                        <div class="cards__item-footer">
+                            <div class="cards__item-price">
+                                <div class="cards__item-new-price">24 000 ₽</div>
+                                <div class="cards__item-old-price">30 000 ₽</div>
+                            </div>
+                            <div class="cards__item-footer-description">
+                                Акция при открытии скидка 20%
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards__button button--padding-h-m cards__button button button--block">
+                        Купить карту
+                    </div>
+                </div>
+                <div class="swiper-slide cards__item">
+                    <div class="cards__item-container">
+                        <div class="cards__item-title">
+                            семейные карты
+                        </div>
+                        <div class="cards__item-description">
+                            Для клиентов от 18 лет и старше 12 месяцев безлимитного фитнеса 21 день заморозки
+                        </div>
+                        <div class="cards__item-list-title">В подарок:</div>
+                        <ul class="cards__item-list">
+                            <li class="cards__item-bonus">Персональная тренировка в тренажерном зале</li>
+                            <li class="cards__item-bonus">Персональная тренировка в тренажерном зале</li>
+                            <li class="cards__item-bonus">Персональная тренировка в тренажерном зале</li>
+                        </ul>
+                        <div class="cards__item-instalment">
+                            Действует рассрочка:
+                            1 месяц - 10 000 р., 2 месяц и последующие - 2 000 р. (при рассрочке скидка не учитывается)
+                        </div>
+                        <div class="cards__item-footer">
+                            <div class="cards__item-price">
+                                <div class="cards__item-new-price">24 000 ₽</div>
+                                <div class="cards__item-old-price">30 000 ₽</div>
+                            </div>
+                            <div class="cards__item-footer-description">
+                                Акция при открытии скидка 20%
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards__button button--padding-h-m cards__button button button--block">
+                        Купить карту
+                    </div>
+                </div>
+                <div class="swiper-slide cards__item">
+                    <div class="cards__item-container">
+                        <div class="cards__item-title">
+                            семейные карты
+                        </div>
+                        <div class="cards__item-description">
+                            Для клиентов от 18 лет и старше 12 месяцев безлимитного фитнеса 21 день заморозки
+                        </div>
+                        <div class="cards__item-list-title">В подарок:</div>
+                        <ul class="cards__item-list">
+                            <li class="cards__item-bonus">Персональная тренировка в тренажерном зале</li>
+                            <li class="cards__item-bonus">Персональная тренировка в тренажерном зале</li>
+                            <li class="cards__item-bonus">Персональная тренировка в тренажерном зале</li>
+                        </ul>
+                        <div class="cards__item-instalment">
+                            Действует рассрочка:
+                            1 месяц - 10 000 р., 2 месяц и последующие - 2 000 р. (при рассрочке скидка не учитывается)
+                        </div>
+                        <div class="cards__item-footer">
+                            <div class="cards__item-price">
+                                <div class="cards__item-new-price">24 000 ₽</div>
+                                <div class="cards__item-old-price">30 000 ₽</div>
+                            </div>
+                            <div class="cards__item-footer-description">
+                                Акция при открытии скидка 20%
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards__button button--padding-h-m cards__button button button--block">
+                        Купить карту
+                    </div>
+                </div>
+                <div class="swiper-slide cards__item">
+                    <div class="cards__item-container">
+                        <div class="cards__item-title">
+                            семейные карты
+                        </div>
+                        <div class="cards__item-description">
+                            Для клиентов от 18 лет и старше 12 месяцев безлимитного фитнеса 21 день заморозки
+                        </div>
+                        <div class="cards__item-list-title">В подарок:</div>
+                        <ul class="cards__item-list">
+                            <li class="cards__item-bonus">Персональная тренировка в тренажерном зале</li>
+                            <li class="cards__item-bonus">Персональная тренировка в тренажерном зале</li>
+                            <li class="cards__item-bonus">Персональная тренировка в тренажерном зале</li>
+                        </ul>
+                        <div class="cards__item-instalment">
+                            Действует рассрочка:
+                            1 месяц - 10 000 р., 2 месяц и последующие - 2 000 р. (при рассрочке скидка не учитывается)
+                        </div>
+                        <div class="cards__item-footer">
+                            <div class="cards__item-price">
+                                <div class="cards__item-new-price">24 000 ₽</div>
+                                <div class="cards__item-old-price">30 000 ₽</div>
+                            </div>
+                            <div class="cards__item-footer-description">
+                                Акция при открытии скидка 20%
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards__button button--padding-h-m cards__button button button--block">
+                        Купить карту
+                    </div>
+                </div>
+                <div class="swiper-slide cards__item">
+                    <div class="cards__item-container">
+                        <div class="cards__item-title">
+                            семейные карты
+                        </div>
+                        <div class="cards__item-description">
+                            Для клиентов от 18 лет и старше 12 месяцев безлимитного фитнеса 21 день заморозки
+                        </div>
+                        <div class="cards__item-list-title">В подарок:</div>
+                        <ul class="cards__item-list">
+                            <li class="cards__item-bonus">Персональная тренировка в тренажерном зале</li>
+                            <li class="cards__item-bonus">Персональная тренировка в тренажерном зале</li>
+                            <li class="cards__item-bonus">Персональная тренировка в тренажерном зале</li>
+                        </ul>
+                        <div class="cards__item-instalment">
+                            Действует рассрочка:
+                            1 месяц - 10 000 р., 2 месяц и последующие - 2 000 р. (при рассрочке скидка не учитывается)
+                        </div>
+                        <div class="cards__item-footer">
+                            <div class="cards__item-price">
+                                <div class="cards__item-new-price">24 000 ₽</div>
+                                <div class="cards__item-old-price">24 000 ₽</div>
+                            </div>
+                            <div class="cards__item-footer-description">
+                                Акция при открытии скидка 20%
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards__button button--padding-h-m cards__button button button--block">
+                        Купить карту
+                    </div>
+                </div>
+                <div class="swiper-slide cards__item">
+                    <div class="cards__item-container">
+                        <div class="cards__item-title">
+                            семейные карты
+                        </div>
+                        <div class="cards__item-description">
+                            Для клиентов от 18 лет и старше 12 месяцев безлимитного фитнеса 21 день заморозки
+                        </div>
+                        <div class="cards__item-list-title">В подарок:</div>
+                        <ul class="cards__item-list">
+                            <li class="cards__item-bonus">Персональная тренировка в тренажерном зале</li>
+                            <li class="cards__item-bonus">Персональная тренировка в тренажерном зале</li>
+                            <li class="cards__item-bonus">Персональная тренировка в тренажерном зале</li>
+                        </ul>
+                        <div class="cards__item-instalment">
+                            Действует рассрочка:
+                            1 месяц - 10 000 р., 2 месяц и последующие - 2 000 р. (при рассрочке скидка не учитывается)
+                        </div>
+                        <div class="cards__item-footer">
+                            <div class="cards__item-price">
+                                <div class="cards__item-new-price">24 000 ₽</div>
+                                <div class="cards__item-old-price">24 000 ₽</div>
+                            </div>
+                            <div class="cards__item-footer-description">
+                                Акция при открытии скидка 20%
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards__button button--padding-h-m cards__button button button--block">
+                        Купить карту
+                    </div>
+                </div>
+                <div class="swiper-slide cards__item">
+                    <div class="cards__item-container">
+                        <div class="cards__item-title">
+                            семейные карты
+                        </div>
+                        <div class="cards__item-description">
+                            Для клиентов от 18 лет и старше 12 месяцев безлимитного фитнеса 21 день заморозки
+                        </div>
+                        <div class="cards__item-list-title">В подарок:</div>
+                        <ul class="cards__item-list">
+                            <li class="cards__item-bonus">Персональная тренировка в тренажерном зале</li>
+                            <li class="cards__item-bonus">Персональная тренировка в тренажерном зале</li>
+                            <li class="cards__item-bonus">Персональная тренировка в тренажерном зале</li>
+                        </ul>
+                        <div class="cards__item-instalment">
+                            Действует рассрочка:
+                            1 месяц - 10 000 р., 2 месяц и последующие - 2 000 р. (при рассрочке скидка не учитывается)
+                        </div>
+                        <div class="cards__item-footer">
+                            <div class="cards__item-price">
+                                <div class="cards__item-new-price">24 000 ₽</div>
+                                <div class="cards__item-old-price">24 000 ₽</div>
+                            </div>
+                            <div class="cards__item-footer-description">
+                                Акция при открытии скидка 20%
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards__button button--padding-h-m cards__button button button--block">
+                        Купить карту
+                    </div>
+                </div>
+                <div class="swiper-slide cards__item">
+                    <div class="cards__item-container">
+                        <div class="cards__item-title">
+                            семейные карты
+                        </div>
+                        <div class="cards__item-description">
+                            Для клиентов от 18 лет и старше 12 месяцев безлимитного фитнеса 21 день заморозки
+                        </div>
+                        <div class="cards__item-list-title">В подарок:</div>
+                        <ul class="cards__item-list">
+                            <li class="cards__item-bonus">Персональная тренировка в тренажерном зале</li>
+                            <li class="cards__item-bonus">Персональная тренировка в тренажерном зале</li>
+                            <li class="cards__item-bonus">Персональная тренировка в тренажерном зале</li>
+                        </ul>
+                        <div class="cards__item-instalment">
+                            Действует рассрочка:
+                            1 месяц - 10 000 р., 2 месяц и последующие - 2 000 р. (при рассрочке скидка не учитывается)
+                        </div>
+                        <div class="cards__item-footer">
+                            <div class="cards__item-price">
+                                <div class="cards__item-new-price">24 000 ₽</div>
+                                <div class="cards__item-old-price">24 000 ₽</div>
+                            </div>
+                            <div class="cards__item-footer-description">
+                                Акция при открытии скидка 20%
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards__button button--padding-h-m cards__button button button--block">
+                        Купить карту
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="employees full-screen">
+        <div class="employees__header">
+            <div class="employees__title">Наши сотрудники</div>
+            <div class="employees__slider-buttons slider-buttons">
+                <div class="cards__slider-button swiper-button-prev arrow-button arrow-button--left js-employees-slider-left"></div>
+                <div class="cards__slider-button swiper-button-next arrow-button arrow-button--right js-employees-slider-right"></div>
+            </div>
+        </div>
+        <div class="swiper employees__list js-employees-slider">
+            <svg class="js-cursor" viewBox="0 0 196 196" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="98" cy="98" r="98" fill="white"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M111.674 98L103.919 90.2443C103.321 89.6471 103.321 88.6787 103.919 88.0814C104.516 87.4842 105.484 87.4842 106.081 88.0814L116 98L106.081 107.919C105.484 108.516 104.516 108.516 103.919 107.919C103.321 107.321 103.321 106.353 103.919 105.756L111.674 98Z" fill="black"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M84.3258 98L92.0814 90.2443C92.6787 89.6471 92.6787 88.6787 92.0814 88.0814C91.4842 87.4842 90.5158 87.4842 89.9186 88.0814L80 98L89.9186 107.919C90.5158 108.516 91.4842 108.516 92.0814 107.919C92.6787 107.321 92.6787 106.353 92.0814 105.756L84.3258 98Z" fill="black"/>
+            </svg>
+
+            <div class="swiper-wrapper">
+                <div class="swiper-slide employees__item">
+                    <div class="employees__item-header">
+                        <div class="employees__item-title">Ирина Миловидова</div>
+                    </div>
+                    <div class="employees__item-body">
+                        <div class="employees__item-desc">
+                            Тренер высшей категории
+                        </div>
+
+                        <div class="employees__item-image-container">
+                            <img src="./images/employee.png" alt="" class="employees__item-image">
+                        </div>
+                        <button class="employees__button button--padding-h-m button button--orange button--block">
+                            Купить абонемент
+                        </button>
+                    </div>
+                </div>
+                <div class="swiper-slide employees__item">
+                    <div class="employees__item-header">
+                        <div class="employees__item-title">Ирина Миловидова</div>
+                    </div>
+                    <div class="employees__item-body">
+                        <div class="employees__item-desc">
+                            Тренер высшей категории
+                        </div>
+
+                        <div class="employees__item-image-container">
+                            <img src="./images/employee.png" alt="" class="employees__item-image">
+                        </div>
+                        <button class="employees__button button--padding-h-m button button--orange button--block">
+                            Купить абонемент
+                        </button>
+                    </div>
+                </div>
+                <div class="swiper-slide employees__item">
+                    <div class="employees__item-header">
+                        <div class="employees__item-title">Ирина Миловидова</div>
+                    </div>
+                    <div class="employees__item-body">
+                        <div class="employees__item-desc">
+                            Тренер высшей категории
+                        </div>
+
+                        <div class="employees__item-image-container">
+                            <img src="./images/employee.png" alt="" class="employees__item-image">
+                        </div>
+                        <button class="employees__button button--padding-h-m button button--orange button--block">
+                            Купить абонемент
+                        </button>
+                    </div>
+                </div>
+                <div class="swiper-slide employees__item">
+                    <div class="employees__item-header">
+                        <div class="employees__item-title">Ирина Миловидова</div>
+                    </div>
+                    <div class="employees__item-body">
+                        <div class="employees__item-desc">
+                            Тренер высшей категории
+                        </div>
+
+                        <div class="employees__item-image-container">
+                            <img src="./images/employee.png" alt="" class="employees__item-image">
+                        </div>
+                        <button class="employees__button button--padding-h-m button button--orange button--block">
+                            Купить абонемент
+                        </button>
+                    </div>
+                </div>
+                <div class="swiper-slide employees__item">
+                    <div class="employees__item-header">
+                        <div class="employees__item-title">Ирина Миловидова</div>
+                    </div>
+                    <div class="employees__item-body">
+                        <div class="employees__item-desc">
+                            Тренер высшей категории
+                        </div>
+
+                        <div class="employees__item-image-container">
+                            <img src="./images/employee.png" alt="" class="employees__item-image">
+                        </div>
+                        <button class="employees__button button--padding-h-m button button--orange button--block">
+                            Купить абонемент
+                        </button>
+                    </div>
+                </div>
+                <div class="swiper-slide employees__item">
+                    <div class="employees__item-header">
+                        <div class="employees__item-title">Ирина Миловидова</div>
+                    </div>
+                    <div class="employees__item-body">
+                        <div class="employees__item-desc">
+                            Тренер высшей категории
+                        </div>
+
+                        <div class="employees__item-image-container">
+                            <img src="./images/employee.png" alt="" class="employees__item-image">
+                        </div>
+                        <button class="employees__button button--padding-h-m button button--orange button--block">
+                            Купить абонемент
+                        </button>
+                    </div>
+                </div>
+                <div class="swiper-slide employees__item">
+                    <div class="employees__item-header">
+                        <div class="employees__item-title">Ирина Миловидова</div>
+                    </div>
+                    <div class="employees__item-body">
+                        <div class="employees__item-desc">
+                            Тренер высшей категории
+                        </div>
+
+                        <div class="employees__item-image-container">
+                            <img src="./images/employee.png" alt="" class="employees__item-image">
+                        </div>
+                        <button class="employees__button button--padding-h-m button button--orange button--block">
+                            Купить абонемент
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="faq">
+        <div class="faq-title">
+            Часто задаваемые вопросы
+        </div>
+        <div class="faq__accordion accordion">
+            <div class="accordion__item">
+                <div class="accordion__header js-accordion-click">
+                    <div class="accordion__title">
+                        Могу ли я продать свой абонемент
+                    </div>
+                    <div class="plus-button"></div>
+                </div>
+                <div class="accordion__body">
+                    У нас вы можете посетить:спортивный и детский бассейн с теплой водой комфортной температуры,
+                    4 вида бань с зоной джакузи и уютной комнатой отдыха, тренажерный зал и залы групповых программ,
+                    большой детский клуб, уютное кафе, соляную комнату. Для посетителей комплекса будут доступны
+                    групповые программы, персональный тренинг для детей и взрослых, занятия в спортивных секциях и
+                    творческих студиях.МегаСпорт – другой уровень Вашего досуга!!!
+                </div>
+            </div>
+            <div class="accordion__item">
+                <div class="accordion__header js-accordion-click">
+                    <div class="accordion__title">
+                        Могу ли я продать свой абонемент
+                    </div>
+                    <div class="plus-button"></div>
+                </div>
+                <div class="accordion__body">
+                    У нас вы можете посетить:спортивный и детский бассейн с теплой водой комфортной температуры,
+                    4 вида бань с зоной джакузи и уютной комнатой отдыха, тренажерный зал и залы групповых программ,
+                    большой детский клуб, уютное кафе, соляную комнату. Для посетителей комплекса будут доступны
+                    групповые программы, персональный тренинг для детей и взрослых, занятия в спортивных секциях и
+                    творческих студиях.МегаСпорт – другой уровень Вашего досуга!!!
+                </div>
+            </div>
+            <div class="accordion__item">
+                <div class="accordion__header js-accordion-click">
+                    <div class="accordion__title">
+                        Могу ли я продать свой абонемент
+                    </div>
+                    <div class="plus-button"></div>
+                </div>
+                <div class="accordion__body">
+                    У нас вы можете посетить:спортивный и детский бассейн с теплой водой комфортной температуры,
+                    4 вида бань с зоной джакузи и уютной комнатой отдыха, тренажерный зал и залы групповых программ,
+                    большой детский клуб, уютное кафе, соляную комнату. Для посетителей комплекса будут доступны
+                    групповые программы, персональный тренинг для детей и взрослых, занятия в спортивных секциях и
+                    творческих студиях.МегаСпорт – другой уровень Вашего досуга!!!
+                </div>
+            </div>
+            <div class="accordion__item">
+                <div class="accordion__header js-accordion-click">
+                    <div class="accordion__title">
+                        Могу ли я продать свой абонемент
+                    </div>
+                    <div class="plus-button"></div>
+                </div>
+                <div class="accordion__body">
+                    У нас вы можете посетить:спортивный и детский бассейн с теплой водой комфортной температуры,
+                    4 вида бань с зоной джакузи и уютной комнатой отдыха, тренажерный зал и залы групповых программ,
+                    большой детский клуб, уютное кафе, соляную комнату. Для посетителей комплекса будут доступны
+                    групповые программы, персональный тренинг для детей и взрослых, занятия в спортивных секциях и
+                    творческих студиях.МегаСпорт – другой уровень Вашего досуга!!!
+                </div>
+            </div>
+            <div class="accordion__item">
+                <div class="accordion__header js-accordion-click">
+                    <div class="accordion__title">
+                        Могу ли я продать свой абонемент
+                    </div>
+                    <div class="plus-button"></div>
+                </div>
+                <div class="accordion__body">
+                    У нас вы можете посетить:спортивный и детский бассейн с теплой водой комфортной температуры,
+                    4 вида бань с зоной джакузи и уютной комнатой отдыха, тренажерный зал и залы групповых программ,
+                    большой детский клуб, уютное кафе, соляную комнату. Для посетителей комплекса будут доступны
+                    групповые программы, персональный тренинг для детей и взрослых, занятия в спортивных секциях и
+                    творческих студиях.МегаСпорт – другой уровень Вашего досуга!!!
+                </div>
+            </div>
+        </div>
+    </section>
+    <div  class="parallax">
+        <div class="application">
+            <div class="application__title">
+                Оставьте заявку на пробное занятие
+            </div>
+            <form action="#" class="application_form form">
+                <label class="form__input input">
+                    Номер
+                    <input placeholder="+7 (999) 999 99 99" type="tel" class="input__field" name="phone">
+                </label>
+                <label class="form__input input">
+                    Имя
+                    <input placeholder="Введите имя" type="text" class="input__field" name="name">
+                </label>
+                <button type="submit" class="form__button button button--padding-h-xl button--yellow">Отправить</button>
+            </form>
+        </div>
+        <footer class="footer">
+            <a href="tel:+79066561161" class="footer__phone">+7 (906) 656 11 61</a>
+            <a href="mailto:user@mail.ru" class="footer__mail">user@mail.ru</a>
+            <div class="footer__container">
+                <div class="footer__address"><div>Москва,  ул. В.Новгорода, 19, к.1</div></div>
+                <div class="footer__links">
+                    <a href="#" class="footer__link">Правила клуба</a>
+                    <a href="#" class="footer__link">Политика конфиденциальности</a>
+                </div>
+                <div class="footer__developer">
+                    Сделано
+                    в MOCKUP.DIGITAL
+                </div>
+            </div>
+        </footer>
+    </div>
+</main>
+</body>
+</html>
