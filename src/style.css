@@ -1,11 +1,15 @@
 @font-face {
     font-family: 'Nekst';
-url('./fonts/Nekst-SemiBold.woff2') format('woff2'),
-url('./fonts/Nekst-SemiBold.woff') format('woff'),
-url('./fonts/Nekst-SemiBold.ttf') format('truetype');
+    src: url('./fonts/Nekst-SemiBold.woff2') format('woff2'),
+    url('./fonts/Nekst-SemiBold.woff') format('woff'),
+    url('./fonts/Nekst-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
+}
+
+html  {
+    scroll-behavior: smooth;
 }
 
 * {
@@ -194,7 +198,7 @@ url('./fonts/Nekst-SemiBold.ttf') format('truetype');
 }
 
 .menu__navigator {
-    padding: 25px 10px;
+    padding: 25px 20px;
 }
 
 .full-screen {
@@ -278,6 +282,7 @@ url('./fonts/Nekst-SemiBold.ttf') format('truetype');
     display: block;
     height: 100%;
     width: 100%;
+    object-fit: cover;
 }
 
 .first-section__button-container {
@@ -326,11 +331,12 @@ url('./fonts/Nekst-SemiBold.ttf') format('truetype');
     font-weight: 600;
     color: #312C22;
     line-height: 90.523%;
-    letter-spacing: -4.494px;
+    letter-spacing: -.06em;
 }
 
 .first-section__text-item span {
     opacity: .17;
+    font-family: 'Nekst', sans-serif;
 }
 
 .first-section__text {
@@ -359,7 +365,6 @@ url('./fonts/Nekst-SemiBold.ttf') format('truetype');
     bottom: 0;
     left: 0;
     height: 100vh;
-    overflow: auto;
     z-index: 110;
 }
 
@@ -371,18 +376,28 @@ url('./fonts/Nekst-SemiBold.ttf') format('truetype');
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, .2);
+    background-color: rgba(0, 0, 0, .76);
+    transition: opacity .5s;
 }
 
 .service-drawer__container {
     position: absolute;
     top: 0;
     right: 0;
+    width: 50vw;
+    background-color: #fff;
+    transition: transform .5s;
+}
+
+.service-drawer__scrollable-container {
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.service-drawer__scrollable {
     display: flex;
     flex-direction: column;
-    width: 50vw;
     min-height: 100vh;
-    background-color: #fff;
 }
 
 .service-drawer__content {
@@ -423,8 +438,20 @@ url('./fonts/Nekst-SemiBold.ttf') format('truetype');
     cursor: pointer;
 }
 
+.swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    opacity: 1;
+    margin: 0 5px;
+}
+
 .swiper-pagination-bullet-active {
     background-color: #EB7B4B;
+}
+
+.swiper-pagination {
+    bottom: 30px!important;
 }
 
 .service-drawer__description {
@@ -454,6 +481,14 @@ url('./fonts/Nekst-SemiBold.ttf') format('truetype');
 .service-drawer:not(.js-active) {
     visibility: hidden;
     z-index: -10;
+}
+
+.service-drawer:not(.js-active) .service-drawer__backdrop {
+    opacity: 0;
+}
+
+.service-drawer:not(.js-active) .service-drawer__container {
+    transform: translateX(100%);
 }
 
 .about-us {
@@ -661,6 +696,7 @@ url('./fonts/Nekst-SemiBold.ttf') format('truetype');
 }
 
 .promo__title {
+    color: #312C22;
     font-size: 60px;
     font-family: 'Nekst', sans-serif;
     font-weight: 600;
@@ -670,7 +706,8 @@ url('./fonts/Nekst-SemiBold.ttf') format('truetype');
 }
 
 .promo__text span {
-    color: #3D372C4A;
+    color: rgba(0, 0, 0, .18);
+    font-family: 'Nekst', sans-serif;
 }
 
 .promo__text-item {
@@ -711,6 +748,7 @@ url('./fonts/Nekst-SemiBold.ttf') format('truetype');
     background: #fff;
     border-right: 1px solid rgba(0, 0, 0, .2);
     transition: .3s;
+    cursor: grab;
 }
 
 .cards__item-container {
@@ -782,6 +820,7 @@ url('./fonts/Nekst-SemiBold.ttf') format('truetype');
 
 .cards__item-footer-description {
     flex-shrink: 1;
+    font-weight: 600;
     max-width: 151px;
 }
 
@@ -836,6 +875,7 @@ url('./fonts/Nekst-SemiBold.ttf') format('truetype');
     background: #F4C150;
     transition: background-color .3s;
     border-right: 1px solid rgba(0, 0, 0, .2);
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
 }
 
 .employees__item-header {
@@ -911,6 +951,11 @@ url('./fonts/Nekst-SemiBold.ttf') format('truetype');
     letter-spacing: -7.353px;
 }
 
+.faq-title span {
+    font-family: 'Nekst', sans-serif;
+    color: rgba(49, 44, 34, .25);
+}
+
 .faq__accordion {
     max-width: 960px;
 }
@@ -924,6 +969,8 @@ url('./fonts/Nekst-SemiBold.ttf') format('truetype');
 .accordion__body {
     background: white;
     padding: 60px 260px 45px 45px;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .accordion__header {
@@ -986,13 +1033,19 @@ url('./fonts/Nekst-SemiBold.ttf') format('truetype');
 }
 
 .application__title {
-    padding: 30px 30px 165px 30px;
+    padding: 62px 30px 165px 30px;
     color: #3D372C;
     font-size: 122.55px;
     font-family: 'Nekst', sans-serif;
     font-weight: 600;
     line-height: 75.523%;
-    letter-spacing: -7.353px;
+    letter-spacing: -.06em;
+    max-width: 967px;
+}
+
+.application__title span {
+    color: rgba(61, 55, 44, .36);
+    font-family: 'Nekst', sans-serif;
 }
 
 .form {
@@ -1144,7 +1197,6 @@ url('./fonts/Nekst-SemiBold.ttf') format('truetype');
 
     .first-section__text-item {
         font-size: 50px;
-        letter-spacing: -3px;
     }
 
     .about-us__main-text {
@@ -1326,7 +1378,6 @@ url('./fonts/Nekst-SemiBold.ttf') format('truetype');
 
     .first-section__text-item {
         font-size: 34px;
-        letter-spacing: -2px;
     }
 
     .first-section__text-container {
@@ -1359,7 +1410,6 @@ url('./fonts/Nekst-SemiBold.ttf') format('truetype');
     .faq-title,
     .application__title {
         font-size: 100px;
-        letter-spacing: -4px;
     }
 
     .button--padding-h-xl {
@@ -1485,6 +1535,16 @@ url('./fonts/Nekst-SemiBold.ttf') format('truetype');
 }
 
 @media screen and (max-width: 767px) {
+    .service-drawer__container {
+        overflow: auto;
+        height: 100vh;
+    }
+
+    .service-drawer__scrollable-container {
+        height: auto;
+        overflow: unset;
+    }
+
     .input {
         border-right: none;
     }
@@ -1545,7 +1605,6 @@ url('./fonts/Nekst-SemiBold.ttf') format('truetype');
 
     .application__title {
         font-size: 24px;
-        letter-spacing: -1.44px;
         padding: 20px 20px 55px;
         line-height: 90.523%;
         max-width: 240px;
@@ -1668,10 +1727,6 @@ url('./fonts/Nekst-SemiBold.ttf') format('truetype');
         justify-content: space-between;
     }
 
-    .employees__item {
-        width: 100%;
-    }
-
     .cards__item {
         width: 100%;
     }
@@ -1772,7 +1827,6 @@ url('./fonts/Nekst-SemiBold.ttf') format('truetype');
     .first-section__text-item {
         font-size: 26px;
         line-height: 90.523%;
-        letter-spacing: -1.5px;
     }
 
     .first-section__button-container {
@@ -1824,5 +1878,43 @@ url('./fonts/Nekst-SemiBold.ttf') format('truetype');
 
     .first-section__video-container {
         display: none;
+    }
+
+    .about-us__sidebar-container {
+        padding: 22px 20px 30px;
+    }
+
+    .promo__text-container {
+        padding: 20px;
+    }
+
+    .employees__item-header {
+        padding: 15px;
+    }
+
+    .employees__list {
+        background-color: #F4C150;
+    }
+
+    .employees__item-desc {
+        left: 20px;
+    }
+
+    .cards__item-container {
+        padding: 20px;
+    }
+
+    .about-us__text {
+        margin-bottom: 0;
+    }
+
+    .swiper-pagination-bullet {
+        width: 8px;
+        height: 8px;
+        margin: 0 3px;
+    }
+
+    .swiper-pagination {
+        bottom: 15px!important;
     }
 }

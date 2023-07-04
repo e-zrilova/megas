@@ -177,6 +177,8 @@ function unlockScroll() {
 
 const burgerBtn = document.querySelector('.js-burger');
 const menu = document.querySelector('.js-menu');
+const anchors = document.querySelector('.js-anchor');
+
 
 if (burgerBtn && menu) {
   burgerBtn.addEventListener('click', function () {
@@ -191,6 +193,18 @@ if (burgerBtn && menu) {
 
     unlockScroll();
   })
+}
+
+if (anchors) {
+  Array.prototype.forEach.call(anchors, function (anchor) {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
 }
 
 const firstScreenVideo = document.querySelector('.js-firs-screen-video');
