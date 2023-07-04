@@ -75,21 +75,29 @@ const cardsSliderCmp = document.querySelector('.js-cards-slider');
 
 if (cardsSliderCmp) {
   const cardsSlider = new Swiper(cardsSliderCmp, {
-    slidesPerView: 1,
-    // loop: true,
+    slidesPerView: 1.1,
+    spaceBetween: 6,
+    centeredSlides: true,
+    loop: true,
     navigation: {
       nextEl: '.js-cards-slider-right',
       prevEl: '.js-cards-slider-left',
     },
     breakpoints: {
       768: {
-        slidesPerView: 2
+        slidesPerView: 2,
+        centeredSlides: false,
+        spaceBetween: 0
       },
       999: {
-        slidesPerView: 3
+        slidesPerView: 3,
+        centeredSlides: false,
+        spaceBetween: 0
       },
       1450: {
-        slidesPerView: 4.3
+        slidesPerView: 4.3,
+        centeredSlides: false,
+        spaceBetween: 0
       }
     }
   });
@@ -99,8 +107,10 @@ const employeesSliderCmp = document.querySelector('.js-employees-slider');
 
 if (employeesSliderCmp) {
   const employeesSliderSlider = new Swiper(employeesSliderCmp, {
-    slidesPerView: 1,
+    slidesPerView: 1.1,
     touchStartPreventDefault: false,
+    spaceBetween: 20,
+    centeredSlides: true,
     // loop: true,
     navigation: {
       nextEl: '.js-employees-slider-right',
@@ -108,13 +118,19 @@ if (employeesSliderCmp) {
     },
     breakpoints: {
       768: {
-        slidesPerView: 2
+        slidesPerView: 2,
+        spaceBetween: 0,
+        centeredSlides: false
       },
       999: {
-        slidesPerView: 3
+        slidesPerView: 3,
+        spaceBetween: 0,
+        centeredSlides: false
       },
       1450: {
-        slidesPerView: 4.3
+        slidesPerView: 4.3,
+        spaceBetween: 0,
+        centeredSlides: false
       }
     }
   });
@@ -156,7 +172,7 @@ if (employeesCursor && employeesSliderCmp) {
 
 const accordionBtns = document.querySelectorAll('.js-accordion-click');
 if (accordionBtns.length) {
-  Array.prototype.forEach.call(accordionBtns, function (btn, index){
+  Array.prototype.forEach.call(accordionBtns, function (btn, xindex){
     btn.addEventListener('click', function (event){
       Array.prototype.forEach.call(accordionBtns, function (item){
         item.classList.remove('js-active');
