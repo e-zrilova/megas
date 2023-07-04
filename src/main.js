@@ -171,14 +171,25 @@ if (employeesCursor && employeesSliderCmp) {
 }
 
 const accordionBtns = document.querySelectorAll('.js-accordion-click');
-if (accordionBtns.length) {
-  Array.prototype.forEach.call(accordionBtns, function (btn, xindex){
+const accordionBody = document.querySelectorAll('.accordion__body');
+if (accordionBtns.length && accordionBody.length) {
+  Array.prototype.forEach.call(accordionBtns, function (btn, index){
     btn.addEventListener('click', function (event){
       Array.prototype.forEach.call(accordionBtns, function (item){
         item.classList.remove('js-active');
       });
 
+      Array.prototype.forEach.call(accordionBody, function (item){
+        item.style.maxHeight = '';
+      });
+
       event.currentTarget.classList.add('js-active');
+
+      const body = accordionBody[index];
+
+      if (body) {
+        body.style.maxHeight = body.scrollHeight + 'px';
+      }
     })
   });
 }
@@ -245,3 +256,4 @@ const serviceDriversSwiper = new Swiper('.service-drawer__slider', {
     prevEl: '.js-service-drawer-prev',
   },
 });
+Fancybox.bind('[data-fancybox="gallery"]', {});

@@ -609,11 +609,17 @@ html  {
     font-weight: 600;
     line-height: 90.523%;
     letter-spacing: -0.96px;
+    max-width: 380px;
 }
 
 .service__description {
     color: #3A3A3A;
     font-size: 18px;
+    max-width: 280px;
+}
+
+.hidden {
+    display: none;
 }
 
 .video {
@@ -975,13 +981,17 @@ html  {
 }
 
 .accordion__header:not(.js-active) + .accordion__body{
-    display: none;
     visibility: hidden;
-    height: 0;
 }
 
 .accordion__body {
     background: white;
+    overflow: hidden;
+    transition: .5s;
+    max-height: 0;
+}
+
+.accordion__body-container {
     padding: 60px 260px 45px 45px;
     font-size: 18px;
     font-weight: 600;
@@ -994,6 +1004,7 @@ html  {
     background: #EB7B4B;
     border-bottom: 1px solid rgba(0, 0, 0, .2);
     cursor: pointer;
+    transition: .5s;
 }
 
 .accordion__header.js-active {
@@ -1339,7 +1350,7 @@ html  {
     .employees__item {
         width: 50%;
     }
-    .accordion__body {
+    .accordion__body-container {
         padding: 30px 20px 20px;
         font-size: 12px;
     }
