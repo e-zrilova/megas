@@ -44,7 +44,6 @@ const serviceDrawers = document.querySelectorAll('.service-drawer');
 if (services.length && serviceDrawers.length) {
   Array.prototype.forEach.call(services, function (service, index) {
     service.addEventListener('mouseenter', function () {
-      console.log(index)
       if (servicesImg.length, servicesImg[index]) {
         Array.prototype.forEach.call(servicesImg, (item) => item.classList.remove('js-active'));
         servicesImg[index].classList.add('js-active');
@@ -166,8 +165,6 @@ if (employeesCursor && employeesSliderCmp) {
   employeesSliderCmp.addEventListener('mousemove', (event) => {
     employeesCursor.style.cssText = `left: ${event.screenX}px; top:${event.pageY - employeesSliderCmp.offsetTop}px;`
   }, true);
-
-  employeesSliderCmp.addEventListener('touchmove', console.log)
 }
 
 const accordionBtns = document.querySelectorAll('.js-accordion-click');
@@ -204,7 +201,7 @@ function unlockScroll() {
 
 const burgerBtn = document.querySelector('.js-burger');
 const menu = document.querySelector('.js-menu');
-const anchors = document.querySelector('.js-anchor');
+const anchors = document.querySelectorAll('.js-anchor');
 
 
 if (burgerBtn && menu) {
@@ -222,11 +219,13 @@ if (burgerBtn && menu) {
   })
 }
 
-if (anchors) {
+if (anchors.length) {
   Array.prototype.forEach.call(anchors, function (anchor) {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
-
+      unlockScroll();
+      burgerBtn.classList.remove('js-active');
+      menu.classList.remove('js-active');
       document.querySelector(this.getAttribute('href')).scrollIntoView({
         behavior: 'smooth'
       });

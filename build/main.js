@@ -38,7 +38,6 @@ var serviceDrawers = document.querySelectorAll('.service-drawer');
 if (services.length && serviceDrawers.length) {
   Array.prototype.forEach.call(services, function (service, index) {
     service.addEventListener('mouseenter', function () {
-      console.log(index);
       if (servicesImg.length, servicesImg[index]) {
         Array.prototype.forEach.call(servicesImg, function (item) {
           return item.classList.remove('js-active');
@@ -149,7 +148,6 @@ if (employeesCursor && employeesSliderCmp) {
   employeesSliderCmp.addEventListener('mousemove', function (event) {
     employeesCursor.style.cssText = "left: ".concat(event.screenX, "px; top:").concat(event.pageY - employeesSliderCmp.offsetTop, "px;");
   }, true);
-  employeesSliderCmp.addEventListener('touchmove', console.log);
 }
 var accordionBtns = document.querySelectorAll('.js-accordion-click');
 var accordionBody = document.querySelectorAll('.accordion__body');
@@ -178,7 +176,7 @@ function unlockScroll() {
 }
 var burgerBtn = document.querySelector('.js-burger');
 var menu = document.querySelector('.js-menu');
-var anchors = document.querySelector('.js-anchor');
+var anchors = document.querySelectorAll('.js-anchor');
 if (burgerBtn && menu) {
   burgerBtn.addEventListener('click', function () {
     window.scrollTo(0, 0);
@@ -191,10 +189,13 @@ if (burgerBtn && menu) {
     unlockScroll();
   });
 }
-if (anchors) {
+if (anchors.length) {
   Array.prototype.forEach.call(anchors, function (anchor) {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
+      unlockScroll();
+      burgerBtn.classList.remove('js-active');
+      menu.classList.remove('js-active');
       document.querySelector(this.getAttribute('href')).scrollIntoView({
         behavior: 'smooth'
       });

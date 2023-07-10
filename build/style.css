@@ -7,9 +7,9 @@
 
 @font-face {
     font-family: 'Nekst';
-    src: url('./fonts/Nekst-SemiBold.woff2') format('woff2'),
-    url('./fonts/Nekst-SemiBold.woff') format('woff'),
-    url('./fonts/Nekst-SemiBold.ttf') format('truetype');
+    src: url('../build/fonts/Nekst-SemiBold.woff2') format('woff2'),
+    url('../build/fonts/Nekst-SemiBold.woff') format('woff'),
+    url('../build/fonts/Nekst-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -777,6 +777,9 @@ html  {
 
 .cards__item {
     width: 24%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
     background: #fff;
     border-right: 1px solid rgba(0, 0, 0, .2);
     transition: .3s;
@@ -787,6 +790,9 @@ html  {
 .cards__item-container {
     padding: 30px 40px 30px 30px;
     border-bottom: 1px solid rgba(0, 0, 0, .2);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .cards__item-title {
@@ -857,6 +863,7 @@ html  {
 
 .cards__item-footer {
     display: flex;
+    margin-top: auto;
 }
 
 .cards__item-price {

@@ -753,6 +753,9 @@ html  {
 
 .cards__item {
     width: 24%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
     background: #fff;
     border-right: 1px solid rgba(0, 0, 0, .2);
     transition: .3s;
@@ -762,6 +765,9 @@ html  {
 .cards__item-container {
     padding: 30px 40px 30px 30px;
     border-bottom: 1px solid rgba(0, 0, 0, .2);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .cards__item-title {
@@ -832,6 +838,7 @@ html  {
 
 .cards__item-footer {
     display: flex;
+    margin-top: auto;
 }
 
 .cards__item-price {
